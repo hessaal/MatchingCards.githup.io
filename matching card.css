@@ -1,0 +1,65 @@
+body{
+	background-color: #caf0f8;
+	color: grey;
+	line-height: 1;
+}
+
+h1{
+	text-transform: uppercase;
+	font-size: 2.5em;
+}
+
+.container{
+	width: 70%;
+	margin: auto;
+	text-align: center;
+}
+
+
+p{
+	font-size: 2em;
+}
+
+#order{
+	color: #f5cb5c;
+	text-transform: capitalize;
+}
+
+.cardsrow{
+display: flex;
+justify-content: space-around;
+}
+
+.square{
+	width: 20% ;
+	background: white;
+	padding-bottom: 25% ;
+	float: left;
+	margin:1% ;
+	border-radius: 10px;
+    background-image: url("https://images.unsplash.com/photo-1551478279-713be6cb027d?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjExMDk0fQ&auto=format&fit=crop&w=634&q=80");
+    background-repeat: no-repeat;
+    background-size: cover;
+    cursor: pointer;
+}
+
+.correct{
+cursor: initial;
+opacity: 0.2;
+border: black solid 1px; 
+}
+
+.end{
+	color: #003459;
+	animation: flash 0.5s infinite  ;
+	text-transform: uppercase;
+}
+
+@keyframes flash{
+	50%{
+		color: #00a8e8;
+	}
+	100%{
+		color: #003459;;
+	}
+}
